@@ -1,2 +1,2 @@
-# Viajes-de-Chile
-Página "Viajes de Chile"
+# Viajes-Chile
+Página "Viajes Chile"
