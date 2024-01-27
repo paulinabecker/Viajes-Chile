@@ -31,13 +31,13 @@
               <a class="nav-link" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quiénes somos</a>
+              <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
   <!--COMIENZO SECTION CARDS TEXTO-->
   <section>
     <div class="container">
-      <h5 class="titulo">QUIÉNES SOMOS</h5>
+      <h5 id="quienes-somos" class="titulo">QUIÉNES SOMOS</h5>
       <hr>
     <div class="row">
       <div class="col-md-4">
@@ -108,7 +108,7 @@
 <!--TÉRMINO SECTION CARDS TEXTO-->
 <section>
 <div class="container">
-  <h5 class="titulo">DESTACADOS</h5>
+  <h5 id="destacados" class="titulo">DESTACADOS</h5>
   <hr>
   <div class="row justify-content-end">
     <div class="col-md-3">
@@ -154,7 +154,8 @@
     
 <section>
   <form class="container-form">
-    <H5 class="titulo">CONTACTO</H5>
+    <H5 id="contacto" class="titulo">CONTACTO</H5>
+    <hr>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -168,19 +169,22 @@
           <label for="exampleInputPassword1" class="form-label">Mensaje</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      
+        <button id="enviar" type="submit" class="btn btn-primary" >
+        Enviar
+      </button>
     </form>
 </section>
 <!--AQUÍ TERMINA EL FORMULARIO-->
 
 <!--AQUÍ COMIENZO EL FOOTER-->
-<footer class="rrss">
+<footer class="rrss" class="mensaje" data-bs-toggle="tooltip" data-bs-title="Ingresa a nuestras redes sociales">
   <h4>VIAJES CHILE</h4>
 <div class="iconos fs-3">
-<i class="fa-brands fa-square-github"></i>
-<i class="fa-brands fa-linkedin"></i>
-<i class="fa-brands fa-square-x-twitter"></i>
-<i class="fa-brands fa-square-facebook"></i>
+<a href="http://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
+<a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+<a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+<a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
 </div>
 </footer>
 
@@ -191,5 +195,37 @@
 
 <!--ENLACE CDN JQUERY-->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </html>
