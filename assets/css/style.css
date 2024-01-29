@@ -6,19 +6,18 @@
     margin: 0px;
     padding: 0px;
     color: white;
-    
-    
 }
 
-.navbar {
-    
-    color: white;
+header {
     background-color: transparent;
-    backdrop-filter: blur(10px)}
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+}
 
-    .navbar-brand {
+.navbar-brand {
         color: white;
-    }
+}
     
 
     .nav-link {
@@ -30,13 +29,10 @@
     background-color: #1dcdf1;
 }
 
-
 .card-body {
 background-color: black;
 text-align: center;
 }
-
-
 
 .card-section {
     background-color: black;
@@ -46,26 +42,14 @@ text-align: center;
     height: 12rem;
 }
 
-
-.card {
-    
-    padding: 10px;
-
-}
-
 .container, .container-texto, .card-text {
     background-color: black;
 }    
     
 
-
-
-
 .titulo, .contacto {
     text-align: center;
 }
-
-
 
 .container-form {
     padding: 5rem;
@@ -80,14 +64,12 @@ text-align: center;
     justify-content: space-around;    
 }
 
-.sect1 {
-    background-color: black;
-   
-}
-
-
 .form-label {
     color: white;
+}
+
+.modal-title {
+    color: black;
 }
 
 
