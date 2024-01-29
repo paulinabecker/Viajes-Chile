@@ -72,13 +72,13 @@
   <!--TÉRMINO SECTION CARRUSEL-->
 
   <!--COMIENZO SECTION CARDS TEXTO-->
-  <section class="container-texto">
+  <section class="container-texto py-5 d-none d-sm-block">
     <div class="container">
-      <h5 id="quienes-somos" class="titulo">QUIÉNES SOMOS</h5>
-      <hr>
+      <h5 id="quienes-somos" class="titulo pb-4">QUIÉNES SOMOS</h5>
+      
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
+          <div>
             <div class="card-texto">
               <div class="icono"><i class="fas fa-solid fa-plane"></i></div>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, excepturi sit sed molestiae libero at, esse saepe et similique rem suscipit officia officiis quia iste magni non nulla totam unde!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi esse, quaerat, culpa ipsa corrupti reprehenderit atque nobis vel voluptate aperiam cum! Necessitatibus optio reprehenderit aperiam enim sapiente, corporis quidem vitae?</p>
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-light">
+          <div>
             <div class="card-texto">
               <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo voluptatum impedit commodi deserunt laudantium eaque? Voluptatum veniam id fuga quam quas inventore quo neque minima voluptas, provident ad accusantium velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, deserunt? Pariatur autem placeat harum officiis veritatis. Laboriosam corporis doloribus, explicabo tenetur harum ipsam quibusdam deleniti eum, excepturi maxime accusantium dolorum.</p>
               <div class="icono"><i class="fas fa-solid fa-mountain"></i></div>
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div>
             <div class="card-texto">
               <div class="icono"><i class="fas fa-solid fa-route"></i></div>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nostrum, amet voluptates qui quas saepe ut natus asperiores magni exercitationem eius optio fugit ab fuga, similique tenetur! Eum, illum libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ducimus, aperiam obcaecati incidunt fuga excepturi nihil explicabo libero voluptatibus error dolorum, quas assumenda, harum reiciendis ullam dolorem animi officiis pariatur!</p>
@@ -105,10 +105,10 @@
     </div>
   </section>
 <!--TÉRMINO SECTION CARDS TEXTO-->
-<section class="card-img">
+<section class="card-section py-5">
   <div class="container">
-    <h5 id="destacados" class="titulo">DESTACADOS</h5>
-    <hr>
+    <h5 id="destacados" class="titulo pb-4">DESTACADOS</h5>
+    
     <div class="row">
       <div class="col-md-3">
         <div class="card-img">
@@ -187,45 +187,5 @@
 <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
 </div>
 </footer>
-
-
-  
-
-  
-
-<!--ENLACE CDN JQUERY-->
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-<script>
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 </body>
 </html>
