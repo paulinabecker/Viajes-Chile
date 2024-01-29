@@ -11,6 +11,7 @@
 }
 
 .navbar {
+    
     color: white;
     background-color: transparent;
     backdrop-filter: blur(10px)}
@@ -24,34 +25,47 @@
     color: white;
 }
 
-.fa-solid {
-    align-content: center;
+.icono {
+    text-align: center;
     background-color: #1dcdf1;
 }
 
+
 .card-body {
-background-color: #1dcdf1;
+background-color: black;
 text-align: center;
 }
 
+
+
+.card-img {
+    background-color: black;
+}
+
+
+
 .card {
     background-color: #1dcdf1;
-border: 0px;
-padding: 0px;
+    padding: 10px;
+
+}
+
+.container, .container-texto, .card-text {
+    background-color: black;
+}    
+    
+
+.card-texto {
+    background-color: #1dcdf1;
+    
 }
 
 
-.card-text {
-background-color: black
-}
-
-.titulo {
+.titulo, .contacto {
     text-align: center;
 }
 
-.contacto {
-    text-align: center;
-}
+
 
 .container-form {
     padding: 5rem;
@@ -68,21 +82,13 @@ background-color: black
 
 .sect1 {
     background-color: black;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+   
 }
 
-.container {
-    background-color: #1dcdf1;
-    
-}
 
 .form-label {
     color: white;
 }
 
-.titulo {
-    text-align: center;
 
-}
+

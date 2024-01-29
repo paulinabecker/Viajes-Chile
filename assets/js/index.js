@@ -1,3 +1,2 @@
-console.log("hello")
+console.log("viajes_chile")
 
-window.alert("Bienvenido a nuestro sitio web");
